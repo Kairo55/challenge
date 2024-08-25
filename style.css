@@ -1,0 +1,258 @@
+:root {
+    --color-principal: #0A3871;
+    --color-secundario: #D8DFE8;
+    --color-fondo: #F3F5FC;
+    --color-texto: #495057;
+    --fuente-principal: 'Inter', sans-serif;
+}
+
+* {
+    font-family: var(--fuente-principal);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: var(--color-fondo);
+    max-width: 138.4rem;
+    margin: auto;
+    font-size: 2rem; /* 16px */
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    background: var(--color-fondo);
+    overflow: hidden;
+}
+
+/* Header */
+.contenedor_logo {
+    width: 100%;
+}
+
+.logo {
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    width: 3.5%;
+}
+
+/* Main */
+.izquierdo {
+    margin-top: 5rem;
+    margin-left: 15rem;
+}    
+
+:root {
+    --color-principal: #0A3871;
+    --color-secundario: #D8DFE8;
+    --color-fondo: #F3F5FC;
+    --color-texto: #495057;
+    --fuente-principal: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box; 
+    font-family: var(--fuente-principal);
+}
+
+html {
+    font-size: 62.5%; /* 10px = 1rem */
+}
+
+body {
+    background: var(--color-fondo);
+    max-width: 138.4rem;
+    margin: 0 auto;
+    font-size: 1.6rem; /* 16px */
+}
+
+.contenedor {
+    display: flex;
+    width: 90%;
+    max-width: 138.4rem;
+    margin: auto;
+    background: var(--color-fondo);
+}
+
+/* Header */
+.contenedor_logo {
+    width: 100%;
+}
+
+.logo {
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    width: 3.5%;
+}
+
+/* Main */
+.izquierdo {
+    margin-top: 5rem;
+    margin-left: 15rem;
+}    
+
+.text-area {
+    border: none;
+    color: var(--color-principal);
+    width: 42.5rem;
+    height: 36.2rem;
+    margin-right: 5rem;
+    margin-bottom: 1.5rem;
+    resize: none;
+    background: none;
+    text-transform: lowercase;
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+.aviso {
+    color: var(--color-texto);
+    font-size: 1.2rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+::placeholder {
+    color: var(--color-principal);
+}
+
+.mensaje {
+    background: white;
+    background-image: url(./img/Muñeco.png);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 1.73%;
+    color: var(--color-principal);
+    max-width: 27.46%;
+    max-height: 60.26%;
+    min-width: 50.46%;
+    min-height: 60.26%;
+   
+    resize: none;
+}
+
+.mensaje:focus {
+    outline: none;
+}
+
+/* Botones */
+.btn-encriptar, .btn-desencriptar, .copiar {
+    border: 0.1rem solid var(--color-principal);
+    border-radius: 1.5rem;
+    cursor: pointer;
+    height: 4.2rem;
+    width: 20.5rem;
+}
+
+.btn-encriptar {
+    background-color: var(--color-principal);
+    color: white;
+}
+
+.btn-encriptar:hover {
+    background-color: white;
+    color: var(--color-principal);
+}
+
+.btn-desencriptar {
+    background-color: var(--color-secundario); 
+    color: var(--color-principal);
+    margin-left: 1.9rem;
+}
+
+.btn-desencriptar:hover {
+    background-color: white;
+    color: var(--color-principal);
+}
+
+.copiar {
+    color: var(--color-principal);
+    width: 21rem;
+    margin-top: 194px;
+}
+
+.copiar:hover {
+    background-color: white;
+    color: var(--color-principal);
+}
+
+/* Grupo de botones */
+.botones {
+    display: flex;
+    margin-top: 1.1rem;
+    margin-bottom: 5rem;
+}
+
+/* Footer */
+.contenedor_footer {
+    display: flex;
+    width: 90%;
+    max-width: 138.4rem;
+    margin: auto;
+}
+
+/* Estilos responsive */
+@media screen and (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .izquierdo {
+        margin: 0;
+    }
+
+    .text-area, .mensaje {
+        width: 100%;
+        max-width: 43rem;
+        margin: 0 0 1rem 0;
+    }
+
+    .botones {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .btn-encriptar, .btn-desencriptar {
+        width: 48%;
+        margin: 0;
+        font-size: 1.6rem;
+    }
+
+    .copiar {
+        margin-top: 1.5rem;
+        width: 100%;
+        max-width: 39rem;
+    }
+
+    .logo {
+        width: 4.29%;
+        margin-top: 7.4rem;
+        margin-left: 4rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 55%;
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+
+    .btn-encriptar, .btn-desencriptar {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
